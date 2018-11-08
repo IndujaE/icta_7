@@ -1,0 +1,35 @@
+
+body{
+<<<<<<< HEAD
+	margin-left: 40px;
+	background:#f7d794
+}
+
+.mytr{
+	background:gray;
+}
+.btn{
+	margin-left: 400px;
+	margin-bottom: 100px;
+	background:red
+}
+.mytitle{
+	margin-left: 400px;
+}
+.mydiv{
+	margin-left: 200px;
+	border: 5px solid black;
+	background:plum;
+	width: 500px;
+}
+=======
+	background:#f7d794
+}
+.mytr{
+	background:pink
+}
+.btn{
+	background:red
+}
+
+>>>>>>> 263d200346b39fda67b95efc22e31b65361982a2
