@@ -19,5 +19,92 @@ function read()
          //console.log("you are eligible"); 
          alert("eligible"); 
     }
+    var dis=document.getElementById("district");
+    var dist=dis.options[dis.selectedIndex].value;
+    console.log(dist);
+ }
+
+ function add()
+ {
+     var n1=document.getElementById("op1").value;
+     var n2=document.getElementById("op2").value;
+     var x=parseInt(n1)+parseInt(n2);
+     //var n=+n1 + +n2;
+     console.log(x);
+
  }
   
+ function calculate(){
+    var n1=document.getElementById("op1").value;
+    var n2=document.getElementById("op2").value;
+    var x=parseInt(n1);
+    var y=parseInt(n2);
+    var a=document.getElementById("operation");
+    var b=a.options[a.selectedIndex].value;
+    if(b=="add")
+    {
+        var add=x+y;
+        console.log(add);
+    }
+    else if(b=="sub")
+    {
+        //var subtract=+n1 - +n2;
+        var subtract=x-y;
+        console.log(subtract);
+    }
+    else if(b=="mul")
+    {
+        var multiply=x*y;
+        console.log(multiply);
+    }
+    else{
+        var division=x/y;
+        console.log(division);
+    }
+ }
+
+ function largest()
+ {
+     var n1=parseInt(document.getElementById("num1").value);
+     var n2=parseInt(document.getElementById("num2").value);
+     var n3=parseInt(document.getElementById("num3").value);
+
+     if((n1>n2)&&(n1>n3))
+     {
+         console.log(n1+" is greatest");
+     }
+     else{
+         if(n2>n3)
+         {
+             console.log(n2+" is greatest")
+
+         }
+         else{
+             console.log(n3+" is greatest");
+         }
+     }
+
+ }
+
+ function smallest()
+ {
+    var n1=parseInt(document.getElementById("num1").value);
+    var n2=parseInt(document.getElementById("num2").value);
+    var n3=parseInt(document.getElementById("num3").value);
+
+    if((n1<n2)&&(n1<n3))
+    {
+        console.log(n1+" is smallest");
+    }
+    else{
+        if(n2<n3)
+        {
+            console.log(n2+" is smallest")
+
+        }
+        else{
+            console.log(n3+" is smallest");
+        }
+    }
+
+ }
