@@ -12,12 +12,12 @@ function read()
     console.log(age);
     if(age<18){
         //console.log("you are not eligible");
-        alert(" you are not eligible");
+       alert(" you are not eligible");
     }
     else
     {
-         //console.log("you are eligible"); 
-         alert("eligible"); 
+        //console.log("you are eligible"); 
+       alert("eligible"); 
     }
     var dis=document.getElementById("district");
     var dist=dis.options[dis.selectedIndex].value;
@@ -44,23 +44,29 @@ function read()
     if(b=="add")
     {
         var add=x+y;
-        console.log(add);
+        //console.log(add);
+        var res=add;
     }
     else if(b=="sub")
     {
         //var subtract=+n1 - +n2;
         var subtract=x-y;
-        console.log(subtract);
+       // console.log(subtract);
+       var res=subtract;
+
     }
     else if(b=="mul")
     {
         var multiply=x*y;
-        console.log(multiply);
+        //console.log(multiply);
+        var res=multilply;
     }
     else{
         var division=x/y;
-        console.log(division);
+        //console.log(division);
+        var res=division;
     }
+    document.getElementById("result").innerHTML="result is"+res;
  }
 
  function largest()
@@ -71,19 +77,21 @@ function read()
 
      if((n1>n2)&&(n1>n3))
      {
-         console.log(n1+" is greatest");
-     }
+         //console.log(n1+" is greatest");
+         var res=n1;
+     }  
      else{
          if(n2>n3)
          {
-             console.log(n2+" is greatest")
-
+             //console.log(n2+" is greatest")
+            var res=n2;
          }
          else{
-             console.log(n3+" is greatest");
+             //console.log(n3+" is greatest");
+             var res=n3;
          }
      }
-
+     document.getElementById("result").innerHTML="<table border=1 class='table'><tr><td>"+res+" is largest </td></tr></table>";
  }
 
  function smallest()
@@ -94,17 +102,21 @@ function read()
 
     if((n1<n2)&&(n1<n3))
     {
-        console.log(n1+" is smallest");
+       // console.log(n1+" is smallest");
+       var res=n1;
     }
     else{
         if(n2<n3)
         {
-            console.log(n2+" is smallest")
+           // console.log(n2+" is smallest")
+           var res=n2;
 
         }
         else{
-            console.log(n3+" is smallest");
+           // console.log(n3+" is smallest");
+           var res=n3;
         }
     }
+  document.getElementById("r").innerHTML="<table border=1 class='table'><tr><td>"+res+"is smallest </td></tr></table>";
 
  }

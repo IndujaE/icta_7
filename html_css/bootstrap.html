@@ -27,25 +27,25 @@
                     <div class="col-sm-6">
                             <div class="row">
                                     <div class="col-sm-6"> Name</div>
-                                    <div class="col-sm-6"> <input type="text" class="form-control" style=background:burlywood id="getname"></div>
+                                    <div class="col-sm-6"> <input type="text" class="form-control" style=background:burlywood id="getname" required></div>
                                     
                                 </div> 
                                 <br>
                             
                                 <div class="row">
                                     <div class="col-sm-6">Roll No</div>
-                                    <div class="col-sm-6"><input type="text" class="form-control" style=background:burlywood id="getrno"></div>
+                                    <div class="col-sm-6"><input type="text" class="form-control" style=background:burlywood id="getrno" required></div>
                                 </div>
                                 <br>
                             
                                 <div class="row">
                                     <div class="col-sm-6">Admission No</div>
-                                    <div class="col-sm-6"><input type="text" class="form-control" style=background:burlywood id="getadno"></div>
+                                    <div class="col-sm-6"><input type="text" class="form-control" style=background:burlywood id="getadno" required></div>
                                 </div>
                                 <br>
                                 <div class="row">
                                     <div class="col-sm-6">AGE</div>
-                                    <div class="col-sm-6"><input type="number" class="form-control" style=background:burlywood id="getage"></div>
+                                    <div class="col-sm-6"><input type="number" class="form-control" style=background:burlywood id="getage" required></div>
                                 </div><br>
                                 <div class="row">
                                     <div class="col-sm-6"> District</div>
@@ -54,8 +54,15 @@
                                         <option value="kannur">kannur</option>
                                         <option value="mala">malappuram</option>
                                     </select></div>
-
                                 </div><br>
+
+                                    <div class="row">
+                                            <div class="col-sm-6">Mobile Number</div>
+                                            <div class="col-sm-6"><input type="text" class="form-control" style=background:burlywood id="getage" pattern="[9876]{1}[0-9]{9}" required></div>
+                                        </div><br>
+
+
+                                
                                 <div class="row">
                                     <div class="col-sm-6"></div>
                                     <div class="col-sm-6"><input type="submit" value=" REGISTER " class="btn-warning" onclick="read();"></div>
