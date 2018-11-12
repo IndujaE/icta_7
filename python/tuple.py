@@ -1,0 +1,7 @@
+mytuple = ("vivek","arun",88,8.97)
+# print(mytuple)
+# print(mytuple[0])
+# print(mytuple[1:3])
+# print(mytuple*3)
+tuple2 = ("a","b",3)
+print(mytuple+tuple2)

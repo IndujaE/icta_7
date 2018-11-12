@@ -1,0 +1,10 @@
+# myfile=open("hello.txt","w")
+# myfile.write("icta fullstack development class")
+# myfile.close()
+# print("file generated")
+
+myfile1=open("hello.txt","r")
+s=myfile1.read()
+print(s)
+myfile1.close()
+print("done")
