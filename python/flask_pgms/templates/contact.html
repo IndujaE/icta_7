@@ -1,0 +1,44 @@
+{% extends 'layout.html' %}
+
+{% block mycontent%}
+<br>
+<div class="card bg-light">
+        <div class="col-sm-6 mx-auto">
+                <br>
+            <div class="jumbotron"> <h3>CONTACT US</h3></div><hr>
+            <form action="/send" method="POST">
+
+                    <div class="row">
+                       
+                            <div class="col-sm-12"><input type="text" class="form-control" placeholder="enter name "name="gname"></div>
+                        </div><br>
+                        <div class="row">
+                              
+                              <div class="col-sm-12"><input type="email" class="form-control" placeholder="enter email-id "name="email"></div>
+                          </div><br>
+                          <div class="row">
+                                  
+                                  <div class="col-sm-12"><input type="number" class="form-control" placeholder="enter mobile number "name="mobile"></div>
+                          </div><br>
+                          <div class="row">
+                                 
+                                  <div class="col-sm-12"><input type="text" class="form-control" placeholder="enter subject " name="sub"></div>
+                          </div><br>
+                          <div class="row">
+                                  
+                                  <div class="col-sm-12"><textarea class="form-control" placeholder="enter message " rows="5" name="msg"></textarea></div>
+                          </div><br>
+                          <div class="row">
+                                  
+                                  <div class="col-sm-12"><input type="submit" value=" CONATCT US " class="btn-warning"></div>
+                          </div><br>
+
+            </form>
+                    
+                    
+            </div>
+
+</div>
+
+ 
+{% endblock %}
